@@ -8,16 +8,23 @@
 
 	<h1>Welcome Employee</h1>
 	<h3>Please log in beloww</h3>
-	
-	<form method="POST" action="">
+	<!-- post request will be set to http://localhost:8080/FrontControllerDemo/login -->
+	<form method="POST" action="login"> 
 		<label>Username:</label>
 		<input type="text" name="username" placeholder="enter username">
-		
+		<br />
 		<label>Password:</label>
 		<input type="password" name="password" placeholder="enter your password">
 		
 		<input type="submit" value="Login!">
 			
+	</form>
+	
+<!-- if someone clicks this button, retreve all employees -->
+<!-- http://localhost:8080/FrontControllerDemo/employees -->
+	<form method="GET" action="employees">
+		<p> to see all employees in the system click below</p>
+		<input type="submit" value="click me">
 	</form>
 	
 

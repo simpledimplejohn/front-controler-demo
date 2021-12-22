@@ -28,6 +28,10 @@ public class FrontController extends HttpServlet {
 			// call error method
 			RequestHelper.processError(request, response);
 			break;
+		case "employees":
+			// method retruns all users to the client
+			RequestHelper.processEmployees(request, response);
+			break;
 		default:
 			// call error method
 			break;
